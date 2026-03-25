@@ -1,4 +1,4 @@
-# default-credentials-scanner
+# hydra-betterdefaults
 
 Small helper to run **THC-Hydra** with SecLists **`*betterdefaultpasslist*`** combo files (under `Passwords/Default-Credentials`) against a host list.
 
