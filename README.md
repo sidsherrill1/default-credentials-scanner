@@ -6,13 +6,25 @@ Small helper to run **THC-Hydra** with SecLists **`*betterdefaultpasslist*`** co
 
 - Kali (or similar) with `hydra` and SecLists at `/usr/share/seclists/...`
 
-## Usage
+## Install
+
+Put the script somewhere on your `PATH` (for example `/usr/local/bin`):
 
 ```bash
 chmod +x hydra-betterdefaults.sh
-./hydra-betterdefaults.sh [options] targets.txt
+sudo mv hydra-betterdefaults.sh /usr/local/bin/
 ```
 
-`targets.txt`: one IP or hostname per line (optional `host:port`). See `./hydra-betterdefaults.sh --help` for `-d` (dry-run), `-o` (output dir), `-e` (extra hydra args), and env vars.
+Alternatively use `~/bin` or another directory that is already listed in `PATH`.
+
+## Usage
+
+```bash
+hydra-betterdefaults.sh [options] targets.txt
+```
+
+From a clone without installing, run `./hydra-betterdefaults.sh` instead.
+
+`targets.txt`: one IP or hostname per line (optional `host:port`). See `hydra-betterdefaults.sh --help` for `-d` (dry-run), `-o` (output dir), `-e` (extra hydra args), and env vars.
 
 Use only on systems you are authorized to test.
